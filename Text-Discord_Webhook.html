@@ -223,7 +223,7 @@
             <label for="content">Message Content:</label>
             <textarea 
                 id="content" 
-                placeholder="Paste or type your message here..."
+                placeholder="Paste your message here..."
                 spellcheck="false"
             ></textarea>
             <div id="preview" class="preview" style="display: none;"></div>
@@ -345,7 +345,7 @@
                 for (let i = 0; i < messages.length; i++) {
                     const payload = {
                         content: messages[i],
-                        username: 'Message Bot'
+                        username: 'Dungeon Master'
                     };
 
                     const response = await fetch(webhookUrl, {
